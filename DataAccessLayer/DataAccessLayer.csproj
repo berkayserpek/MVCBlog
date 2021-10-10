@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAbout.cs" />
+    <Compile Include="Abstract\IAdmin.cs" />
+    <Compile Include="Abstract\IAuthor.cs" />
+    <Compile Include="Abstract\IBlog.cs" />
+    <Compile Include="Abstract\ICategory.cs" />
+    <Compile Include="Abstract\IComment.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Migrations\Configuration.cs" />
