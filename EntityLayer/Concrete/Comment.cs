@@ -18,6 +18,6 @@ namespace EntityLayer.Concrete
         [StringLength(300)]
         public string CommentText { get; set; }
         public int BlogID { get; set; }
-        public Blog Blog { get; set; }
+        public virtual Blog Blog { get; set; }
     }
 }
