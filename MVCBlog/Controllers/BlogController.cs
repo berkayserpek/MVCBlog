@@ -22,5 +22,30 @@ namespace MVCBlog.Controllers
         {
             return PartialView();
         }
+
+        public PartialViewResult OtherFeaturedPost()
+        {
+            return PartialView();
+        }
+        public PartialViewResult MailSubscribe()
+        {
+            return PartialView();
+        }
+        public ActionResult BlogDetails()
+        {
+            return View();
+        }
+        public PartialViewResult BlogCover()
+        {
+            return PartialView();
+        }
+        public PartialViewResult BlogReadAll()
+        {
+            return PartialView();
+        }
+        public ActionResult BlogByCategory()
+        {
+            return View();
+        }
     }
 }
