@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Concrete\BlogRepository.cs" />
     <Compile Include="Concrete\CategoryRepository.cs" />
+    <Compile Include="Concrete\SubscribeMailRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
