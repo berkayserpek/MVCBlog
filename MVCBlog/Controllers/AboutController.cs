@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,13 +10,15 @@ namespace MVCBlog.Controllers
     public class AboutController : Controller
     {
         // GET: About
+        AboutRepository aboutRepository = new AboutRepository();
         public ActionResult Index()
         {
             return View();
         }
         public PartialViewResult Footer()
         {
-            return PartialView();
+            var aboutContentList = aboutRepository.GetAll();
+            return PartialView(aboutContentList);
         }
         public PartialViewResult MeetTheTeam()
         {
